@@ -6,18 +6,24 @@
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
- <h1>Rock Paper Scissors</h1>
+  <h1>Rock Paper Scissors</h1>
 
-<div id="buttons">
-  <button class="choice" data-choice="rock">Rock</button>
-  <button class="choice" data-choice="paper">Paper</button>
-  <button class="choice" data-choice="scissors">Scissors</button>
-</div>
+  <div id="scoreboard">
+    <p id="score">Player: 0 — Computer: 0</p>
+  </div>
 
-<div id="results"></div>
-<div id="score"></div>
 
+  <div id="buttons">
+    <button class="choice" data-choice="rock">✊</button>
+    <button class="choice" data-choice="paper">✋</button>
+    <button class="choice" data-choice="scissors">✌️</button>
+  </div>
+
+  <div id="results"></div>
+
+  <button id="reset">Reset Game</button>
 
   <script src="script.js"></script>
 </body>
