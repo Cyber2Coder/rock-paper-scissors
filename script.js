@@ -72,7 +72,9 @@ function declareWinner() {
 
   buttons.forEach(btn => (btn.disabled = true));
 
-  if (playerScore === 5) launchConfetti();
+  if (playerScore === 5) {
+    launchConfetti();   // CONFETTI FIXED
+  }
 }
 
 /* ===== UI EFFECTS ===== */
@@ -86,7 +88,7 @@ function flashResult(type) {
 }
 
 function launchConfetti() {
-  const duration = 1000;
+  const duration = 3000;   // was 1000 — now 3 seconds
   const end = Date.now() + duration;
 
   (function frame() {
@@ -96,11 +98,12 @@ function launchConfetti() {
     particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     document.body.appendChild(particle);
 
-    setTimeout(() => particle.remove(), 1000);
+    setTimeout(() => particle.remove(), 3000);
 
     if (Date.now() < end) requestAnimationFrame(frame);
   })();
 }
+
 
 /* ===== RESET ===== */
 resetBtn.addEventListener("click", () => {

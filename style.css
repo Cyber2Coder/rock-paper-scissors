@@ -4,7 +4,17 @@ body {
   text-align: center;
   padding: 20px;
   color: white;
-  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+
+  /* Animated Gradient Background */
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a, #222, #111);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* ===== TITLE ===== */
@@ -29,7 +39,7 @@ h1 {
 }
 
 #score {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin: 0;
   letter-spacing: 2px;
@@ -50,9 +60,9 @@ h1 {
 
 /* ===== BUTTONS ===== */
 #buttons button {
-  padding: 20px 15px;
-  margin: 15px;
-  font-size: 5rem;
+  padding: 20px 25px;      /* smaller for better fit */
+  margin: 10px;
+  font-size: 3.5rem;       /* reduced from 5rem */
   cursor: pointer;
   border: none;
   background: #f0f0f0;
