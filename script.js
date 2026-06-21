@@ -1,5 +1,17 @@
+const WIN_LIMIT = 5;
+
 let humanScore = 0;
 let computerScore = 0;
+
+function checkWinner() {
+    if (humanScore === WIN_LIMIT) {
+        resultDiv.textContent = "🎉 You win the game!";
+        disableButtons();
+    } else if (computerScore === WIN_LIMIT) {
+        resultDiv.textContent = "💀 Computer wins the game!";
+        disableButtons();
+    }
+}
 
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
