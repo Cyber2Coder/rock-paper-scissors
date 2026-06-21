@@ -47,3 +47,9 @@ function declareWinner() {
   // Disable buttons
   buttons.forEach(btn => btn.disabled = true);
 }
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const playerSelection = button.dataset.choice;
+    playRound(playerSelection);
+  });
+});
