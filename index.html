@@ -11,19 +11,24 @@
   <h1>Rock Paper Scissors</h1>
 
   <div id="scoreboard">
-    <p id="score">Player: 0 — Computer: 0</p>
+    <div id="score">Player: 0 ⚡ Computer: 0</div>
   </div>
 
-
   <div id="buttons">
-    <button class="choice" data-choice="rock">✊</button>
-    <button class="choice" data-choice="paper">✋</button>
-    <button class="choice" data-choice="scissors">✌️</button>
+    <button data-choice="rock">✊</button>
+    <button data-choice="paper">✋</button>
+    <button data-choice="scissors">✌️</button>
   </div>
 
   <div id="results"></div>
 
   <button id="reset">Reset Game</button>
+
+  <div id="gameOverScreen">
+    <div id="gameOverTitle"></div>
+    <div id="gameOverMessage"></div>
+    <button id="playAgainBtn">Play Again</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
