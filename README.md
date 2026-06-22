@@ -6,7 +6,7 @@ This project demonstrates DOM manipulation, event-driven JavaScript, UI updates,
 ---
 
 ## 🔗 Live Demo
-(Deploy to GitHub Pages to enable this section)
+https://cyber2coder.github.io/rock-paper-scissors/
 
 ---
 
